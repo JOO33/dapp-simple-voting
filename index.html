@@ -11,6 +11,7 @@
 
     <title>Vote</title>
 </head>
+
 <body>
     <div class="container">
         <h1>A Simple Hello World Voting Application</h1>
@@ -24,23 +25,27 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Rama</td>
-                        <td id="candidate-1"></td>
+                        <td>P1</td>
+                        <td id="proposal-1"></td>
                     </tr>
                     <tr>
                         <td>Nick</td>
-                        <td id="candidate-2"></td>
+                        <td id="proposal-2"></td>
                     </tr>
                     <tr>
                         <td>Jose</td>
-                        <td id="candidate-3"></td>
+                        <td id="proposal-3"></td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <input type="text" id="candidate" />
-        <a href="#" onclick="voteForCandidate()" class="btn btn-primary">Vote</a>
+        <a href="#" onclick="voteForProposal()" class="btn btn-primary">Vote</a>
     </div>
+    <script> 
+    CONTRACT_ADDRESS = 'REPLACE_WITH_CONTRACT_ADDRESS';
+    ABI_DEFINITION = JSON.parse('REPLACE_WITH_ABI_DEFINITION');
+    </script>
     <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
     <script src="./index.js"></script>
